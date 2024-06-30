@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title> user sign up</title>
+        <style>
+            body{
+                background:linear-gradient(rgba(22,160,133,1),rgba(46,204,113,1));
+            }
+#header{
+    height: 100px;
+    width: 100%;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    display: flex;
+}
+h1{
+    margin-left: 80px;
+    color: white;
+}
+ul li {
+    display: inline-block;
+    width: 70px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+a:hover{
+    color:blue;
+    background-color: white;
+    border-radius: 10px;
+}
+#body{
+    height: 500px;
+    width: 100%;
+}
+#box{
+    height: 300px;
+    width: 300px;
+    border: 3px solid white;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+th{
+    color: white;
+}
+#footer{
+    height: 50px;
+    width: 100%;
+    background: rgba(255,255,255,0.2);
+}
+input[type=text]{
+    border-radius: 10px;
+}
+input[type=email]{
+    border-radius: 10px;
+}
+input[type=number]{
+    border-radius: 10px;
+}
+input[type=date]{
+    border-radius: 10px;
+}
+input[type=password]{
+    border-radius: 10px;
+}
+input[type=submit]{
+    border-radius: 10px;
+}
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div id ="logo">
+                <img src="logo.jpeg" height="90" width="150">
+                <h1>Charging Point Availability For Electric Vehicle</h1>
+            </div>
+            <div id ="links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="account.html">User</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="body">
+            <center>
+                <div style="width:30%; text-align: center; color: white">
+                    <h2>Join our community of our family</h2>
+                </div>
+                <div style="width:30%; text-align: center; color: white">
+                    <h2>User Registration</h2>
+                </div>
+<div id="box">
+    <form action ="accountSignAction.jsp" method="post">
+    <table>
+        <h2 style="color :white;" User Signup></h2>
+        <tr>
+            <th> Full name:</th>
+            <td><input type ="text" name="fullname" placeholder ="enter fullname" required></td>
+        </tr>
+        <tr>
+            <th> Email:</th>
+            <td><input type ="text" name="email" placeholder ="enter email" required></td>
+        </tr>
+        <tr>
+            <th> DOB:</th>
+            <td><input type ="date" name ="dob"></td>
+        </tr>
+        <tr>
+        <th> User name:</th>
+        <td><input type ="text" name="username" placeholder="enter user name" required></td>
+        </tr>
+        <tr>
+        <th> password:</th>
+        <td><input type ="password" name ="password" placeholder="enter password" required></td>
+        </tr>
+        <tr>
+            <th> </th>
+            <td> <input type ="submit" value="SignUp">
+        </td>
+        </tr>
+        <tr>
+        <th> </th>
+        <td style="color: white;"> Already hava a account? <a href ="account.html"> Sign In</a></td>
+        </tr>
+    </table>
+    </form>
+</div>
+<div id ="footer">
+    <h3 style="color: blue; text-align: center;">&COPY all rights reserved Mini project</h2>
+    
+</div>
+
+            </center>
+        </div>
+    </body>
+</html>
